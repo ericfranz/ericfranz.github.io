@@ -37,7 +37,7 @@ $ ruby -e "puts File.expand_path '~efranz'"
 /home/efranz
 ```
 
-What is happening? Lets peekat the implementation of `Dir.home`.
+What is happening? Lets peek at the implementation of `Dir.home`.
 
 ```
 $ ruby --version
