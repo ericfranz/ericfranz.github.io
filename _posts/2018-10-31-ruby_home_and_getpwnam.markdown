@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ruby_home_woes"
+title: "Ruby, $HOME, and getpwnam"
 date: 2018-10-31T14:55:56-04:00
 ---
 
