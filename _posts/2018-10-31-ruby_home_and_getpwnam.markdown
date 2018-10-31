@@ -7,13 +7,13 @@ date: 2018-10-31T14:55:56-04:00
 What I would expect:
 
 ```
-[efranz@webdev07 ~]$ echo $HOME
+$ echo $HOME
 /home/efranz
-[efranz@webdev07 ~]$ pwd
+$ pwd
 /home/efranz
-[efranz@webdev07 ~]$ ls -ld ~
+$ ls -ld ~
 drwx------ 2 efranz PZS0714 4096 Oct 31 14:54 /home/efranz
-[efranz@webdev07 ~]$ HOME=$(mktemp -d)
+$ HOME=$(mktemp -d)
 $ echo $HOME
 /tmp/tmp.IkjRJV5IYi
 $ pwd
