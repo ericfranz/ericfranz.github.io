@@ -22,10 +22,6 @@ $ ls -ld ~
 drwx------ 2 efranz PZS0714 4096 Oct 31 14:57 /tmp/tmp.IkjRJV5IYi
 $ (ls -ld ~)
 drwx------ 2 efranz PZS0714 4096 Oct 31 14:57 /tmp/tmp.IkjRJV5IYi
-$ ruby -e "puts `ls -ld ~`"
--e:1: syntax error, unexpected tIDENTIFIER, expecting end-of-input
-puts drwx------ 2 efranz PZS0714 4096 Oct 31 14:57 /tmp/tmp.IkjRJV5IYi
-                        ^
 $ ruby -e "puts \`ls -ld ~\`"
 drwx------ 2 efranz PZS0714 4096 Oct 31 14:57 /tmp/tmp.IkjRJV5IYi
 $ ruby -e "puts Dir.home"
