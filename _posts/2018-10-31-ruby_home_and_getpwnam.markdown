@@ -63,4 +63,10 @@ See `man 3 getpwnam`
 > the record in the password database (e.g., the local password  file  /etc/passwd,  NIS,  and
 > LDAP) that matches the username name.
 
-Conclusion? Be careful to consider whether or not it is appropriate to use `Dir.home` or `Dir.home(user)` and treat them as two separate functions. And assume that `File.expand_path` (or basically anything that resolves `~` in Ruby) is going to use `getpwnam`.
+## Conclusion
+
+Be careful to consider whether or not it is appropriate to use `Dir.home` or `Dir.home(user)` and treat them as two separate functions. And assume that `File.expand_path` (or basically anything that resolves `~` in Ruby) is going to use `getpwnam`.
+
+### rubygems is now careful about this as of v3
+
+See https://github.com/rubygems/rubygems/commit/47c9f378687a6f806561a14dd50eae8eb4652882 which switched from using `File.expand_path "~"` to `Dir.home` to find the home directory.
