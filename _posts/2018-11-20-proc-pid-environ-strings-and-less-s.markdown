@@ -44,7 +44,7 @@ Much better. Now I want to see how the environment for Ruby is setup.
 
 Great! And I can open this in less which lets me navigate around:
 
-    sudo cat /proc/3268/environ | strings | grep ruby | less
+    $ sudo cat /proc/3268/environ | strings | grep ruby | less
 
 ```
 MANPATH=/opt/rh/rh-ruby24/root/usr/local/share/man:/opt/rh/rh-ruby24/root/usr/share/man:/opt/rh/rh-nodejs6/root/usr/share/man:/opt/rh/rh-git29/root/usr/share/man:/opt/rh/rh-passenger40/root/usr/share/man:/opt/rh/nginx16/root/usr/share/man:
@@ -58,7 +58,7 @@ PKG_CONFIG_PATH=/opt/rh/rh-ruby24/root/usr/local/lib64/pkgconfig:/opt/rh/rh-ruby
 
 But the line wrap makes it a little difficult so lets see it all on one line:
 
-    sudo cat /proc/3268/environ | strings | grep ruby | less -S
+    $ sudo cat /proc/3268/environ | strings | grep ruby | less -S
 
 ```
 MANPATH=/opt/rh/rh-ruby24/root/usr/local/share/man:/opt/rh/rh-ruby24/root/usr/share/man:/opt/rh/rh-nodejs6/root/usr/share/man:/opt/rh/rh-git29/root/usr/share/man:/opt/rh/rh-passenger40/root/usr/share/man:/opt/rh/nginx16/root/u
