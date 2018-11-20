@@ -4,8 +4,6 @@ title: "/proc/PID/environ, strings, and less -S"
 date: 2018-11-20T09:46:03-05:00
 ---
 
-# /proc/PID/environ, strings, and less -S
-
 ## TLDR
 
 1. pipe `cat /proc/3268/environ` to `strings` to get friendly output
