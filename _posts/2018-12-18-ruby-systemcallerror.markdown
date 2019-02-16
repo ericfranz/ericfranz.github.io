@@ -10,5 +10,5 @@ Its a good idea to be aware of all of the subclasses of `SystemCallError`[^1] wh
 
 
 
-[^1]: https://ruby-doc.org/core-2.4.0/SystemCallError.html
-[^2]: https://ruby-doc.org/core-2.4.0/Errno.html 
+[^1]: <https://ruby-doc.org/core-2.4.0/SystemCallError.html>
+[^2]: <https://ruby-doc.org/core-2.4.0/Errno.html>
