@@ -44,13 +44,13 @@ $ ruby --version
 ruby 2.0.0p648 (2015-12-16) [x86_64-linux]
 ```
 
-https://ruby-doc.org/core-2.0.0/Dir.html#method-c-home
+<https://ruby-doc.org/core-2.0.0/Dir.html#method-c-home>
 
 > Returns the home directory of the current user or the named user if given.
 
 This is one function that executes two different code paths based on the argument provided (or omitted).
 
-See https://www.ruby-lang.org/en/news/2015/12/16/ruby-2-0-0-p648-released/ It is actually stored in subversion, but [here is a copy in GitHub](https://github.com/ruby/ruby/tree/v2_0_0_648).
+See <https://www.ruby-lang.org/en/news/2015/12/16/ruby-2-0-0-p648-released/> It is actually stored in subversion, but [here is a copy in GitHub](https://github.com/ruby/ruby/tree/v2_0_0_648).
 
 1.  If `rb_home_dir` [is called without the username](https://github.com/ruby/ruby/blob/v2_0_0_648/file.c#L2899-L2906), it returns the value of `getenv("HOME")`: 
 2.  If `rb_home_dir` [is called with a username](https://github.com/ruby/ruby/blob/v2_0_0_648/file.c#L2907-L2921), it gets the password struct via `getpwnam(user)`
@@ -69,4 +69,4 @@ Be careful to consider whether or not it is appropriate to use `Dir.home` or `Di
 
 ### rubygems is now careful about this as of v3
 
-See https://github.com/rubygems/rubygems/commit/47c9f378687a6f806561a14dd50eae8eb4652882 which switched from using `File.expand_path "~"` to `Dir.home` to find the home directory.
+See <https://github.com/rubygems/rubygems/commit/47c9f378687a6f806561a14dd50eae8eb4652882> which switched from using `File.expand_path "~"` to `Dir.home` to find the home directory.
