@@ -9,4 +9,4 @@ Discourse [uses base62 for url friendly fragments for file upload urls](https://
 >(note that we’ll need to use base62 3, to avoid the / and + chars in URLs though)
 >![Base64's last two chars are / and +](/assets/base64.png)
 
-And this is the Ruby library they use: https://github.com/steventen/base62-rb
+And this is the Ruby library they use: <https://github.com/steventen/base62-rb>
