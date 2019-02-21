@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ripgrep and Sed to Find Replace in Project"
+title: "Using ripgrep and sed to Find Replace in Project"
 date: 2019-02-21T11:35:36-05:00
 ---
 
