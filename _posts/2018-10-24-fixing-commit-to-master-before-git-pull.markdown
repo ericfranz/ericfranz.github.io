@@ -16,15 +16,10 @@ The simple solution:
 git checkout -b
 
 # update master ref to point to previous commit (like it was before)
-git update-ref refs/heads/master e45acbb
+git update-ref refs/heads/master master~1
 
 # now its safe to git fetch
 git fetch
 ```
 
 Now its safe to git fetch, and I can merge my branch into master when I'm ready.
-
-TODO
-
-- [ ] test and verify we can do `git update-ref refs/heads/master master~1` and update this post
-- [ ] test and verify the merge from our branch to master, after the fast forward merge for the master branch and update this post

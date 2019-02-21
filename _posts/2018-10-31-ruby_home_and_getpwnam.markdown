@@ -4,7 +4,7 @@ title: "Ruby, $HOME, and getpwnam"
 date: 2018-10-31T14:55:56-04:00
 ---
 
-What I would expect:
+I would expect `Dir.home` to change when I change `HOME` environment variable in Ruby:
 
 ```
 $ echo $HOME
@@ -28,7 +28,7 @@ $ ruby -e "puts Dir.home"
 /tmp/tmp.IkjRJV5IYi
 ```
 
-Suprise!
+It does. **But not for `Dir.home(USERNAME)` or `File.expand_path`**:
 
 ```
 $ ruby -e "puts Dir.home('efranz')"
@@ -52,7 +52,7 @@ This is one function that executes two different code paths based on the argumen
 
 See <https://www.ruby-lang.org/en/news/2015/12/16/ruby-2-0-0-p648-released/> It is actually stored in subversion, but [here is a copy in GitHub](https://github.com/ruby/ruby/tree/v2_0_0_648).
 
-1.  If `rb_home_dir` [is called without the username](https://github.com/ruby/ruby/blob/v2_0_0_648/file.c#L2899-L2906), it returns the value of `getenv("HOME")`: 
+1.  If `rb_home_dir` [is called without the username](https://github.com/ruby/ruby/blob/v2_0_0_648/file.c#L2899-L2906), it returns the value of `getenv("HOME")`:
 2.  If `rb_home_dir` [is called with a username](https://github.com/ruby/ruby/blob/v2_0_0_648/file.c#L2907-L2921), it gets the password struct via `getpwnam(user)`
 
 So this can cause problems if you try to change the home directory for the Ruby process you are executing by modifying the `HOME` environment variable.
