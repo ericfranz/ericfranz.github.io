@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "Using the mail command from OSC"
