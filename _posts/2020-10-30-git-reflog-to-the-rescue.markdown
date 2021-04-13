@@ -4,7 +4,7 @@ title: "Git Reflog to the Rescue"
 date: 2020-10-30T10:46:52-04:00
 ---
 
-Yet again the git reflog saves the day. Several times it has happened that I accidentally deployed a new version of an app in production.
+Yet again the git reflog saves the day. Several times it has happened that I accidentally deployed a new version of an app in production. _Note: this is about an app that was not managed by Puppet, but instead was deployed by manually cloning the app repo._
 
 I did a git pull, app restart, and curl to start the app and then realized I need to revert. But I'm not the developer of this app - and the developers are not tagging the previous versions they deploy, so how do I know which commit to revert to? The reflog!
 
