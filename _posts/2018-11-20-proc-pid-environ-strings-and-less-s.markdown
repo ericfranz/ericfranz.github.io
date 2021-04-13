@@ -9,7 +9,7 @@ date: 2018-11-20T09:46:03-05:00
 1. pipe `cat /proc/3268/environ` to `strings` to get friendly output
 2. Use `less -S` to drop line wrap in 
 
-## I want newlines. I don't want line wrapping. I'm very needy.
+## I want newlines. I don't want line wrapping.
 
 For a running process, given that process's id, you can see the initial environment of the process by cat-ing the environ file in /proc/PID:
 
