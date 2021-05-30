@@ -22,6 +22,8 @@ thoughts**
 - Confident Ruby - Avdi Grimm (and Ruby Tapis videos)
 - A Philosophy of Software Design - John Ousterhout
 - Clean Code - Robert C. Martin (Uncle Bob)
+- Dave Thomas's videos on describing the Ruby Object Model (I can't find it but
+  this may cover similar ground https://www.youtube.com/watch?v=X2sgQ38UDVY)
 
 ### Testing
 
