@@ -1,0 +1,65 @@
+---
+layout: post
+title: "Books"
+date: 2021-05-30T16:12:49-04:00
+---
+
+**Note: Below is a work in progress, I'll update this sometime with links and
+thoughts**
+
+## Reading now
+
+- Systems Performance - Brendan Gregg
+- Designing Data-Intensive Applications - Martin Kleppmann
+
+## Books that have had an impact on me
+
+### Software Design and Ruby Programming
+
+- Refactoring - Martin Fowler
+- Refactoring Ruby Edition - Martin Fowler & Jay Fields
+- Object Oriented Design - Sandi Metz
+- Confident Ruby - Avdi Grimm (and Ruby Tapis videos)
+- A Philosophy of Software Design - John Ousterhout
+- Clean Code - Robert C. Martin (Uncle Bob)
+
+### Testing
+
+- Test-Driven Development By Example - Kent Beck
+- Effective Unit Testing - Jay Fields
+- Working Effectively with Legacy Code - Michael Feathers
+
+### Patterns
+
+- Patterns of Enterprise Application Architecture
+- Design Patterns
+- Head First Design Patterns
+
+### DevOps
+
+- The DevOps Handbook - Kim, Humble, Willis, Debois, Allspaw
+- Continous Delivery - Jez Humble & David Farley
+- Release It! - Michael Nygard
+
+### UX
+
+- All articles by Jacob Nielson and team: https://www.nngroup.com/
+- Show Me the Numbers - Stephen Few
+- Information Dashboard Design - Stephen Few
+- The Universal Principles of Design - Lidwell, Holden, Butler
+- The Universal Methods of Design - Hanington, Martin
+- About Face - The Essentials of Interaction Design - Alan Cooper
+- Designing Interfaces - Jenifer Tidwell
+
+# Joel Spolsky
+
+- Joel on Software
+- More Joel on Software
+- Best Software Writing I
+- https://www.joelonsoftware.com/
+
+### Blogs
+
+- https://thoughtbot.com/blog
+- https://8thlight.com/blog/
+
