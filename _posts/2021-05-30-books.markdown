@@ -24,6 +24,7 @@ thoughts**
 - Clean Code - Robert C. Martin (Uncle Bob)
 - Dave Thomas's videos on describing the Ruby Object Model (I can't find it but
   this may cover similar ground https://www.youtube.com/watch?v=X2sgQ38UDVY)
+- Gary Bernhardt's amazing screencasts and "Programmer's Compendium": https://www.destroyallsoftware.com/screencasts
 
 ### Testing
 
